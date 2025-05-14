@@ -8,7 +8,7 @@ This project is a lightweight, interpretable, and web-based **Car Recommendation
 project2/
 │
 ├── input/                          
-│   └── CAR DETAILS FROM CAR DEKHO.csv
+│     └── CAR DETAILS FROM CAR DEKHO.csv
 │
 |
 ├── static/                        
