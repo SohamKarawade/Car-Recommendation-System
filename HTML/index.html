@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Company Branding -->
+        <h1 class="company-name">CARS SPINZ</h1>
+        <p class="tagline">WE HELP YOU FIND YOUR DREAM CAR</p>
+
+        <!-- Main Heading -->
+        <h2>Find Your Dream Car</h2>
+
+        <form action="/recommend" method="POST" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="price">Price:</label>
+                <input type="number" name="price" min="1" placeholder="Enter car price amount" required>
+            </div>
+            <div class="input-group">
+                <label for="fuel_type">Fuel Type:</label>
+                <select name="fuel_type">
+                    <option value="" disabled selected>Select fuel type</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Electric">Electric</option>
+                    <option value="LPG">LPG</option>
+                    <option value="CNG">CNG</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="seller_type">Seller Type:</label>
+                <select name="seller_type">
+                    <option value="" disabled selected>Select seller type</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Dealer">Dealer</option>
+                    <option value="trustmark dealer">Trustmark Dealer</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="car_type">Car Type:</label>
+                <select name="car_type">
+                    <option value="" disabled selected>Select car type</option>
+                    <option value="New">New Car</option>
+                    <option value="Used">Used Car</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="driving_experience">How well do you drive a car?</label>
+                <select name="driving_experience">
+                    <option value="" disabled selected>Select experience level</option>
+                    <option value="1">1 - Beginner</option>
+                    <option value="2">2 - Learning</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Experienced</option>
+                    <option value="5">5 - Expert</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="low_maintenance">Do you prefer cars with low maintenance costs?</label>
+                <select name="low_maintenance">
+                    <option value="" disabled selected>Select preference</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="luxury_car">Do you want a Premium Luxury class car?</label>
+                <select name="luxury_car">
+                    <option value="" disabled selected>Select preference</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">🚗 Recommend</button>
+        </form>
+    </div>
+</body>
+</html>

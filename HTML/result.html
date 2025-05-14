@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🚗 Recommended Cars 🚀</h1>
+        {% if cars %}
+            <div class="car-list">
+                {% for car in cars %}
+                <div class="car-card fade-in">
+                    <h2 class="car-name">{{ car['name'] }}</h2>
+                    <p class="car-price">💰 Price: <span>₹{{ car['selling_price'] }}</span></p>
+                    <p class="car-details">
+                        ⛽ Fuel: <span>{{ car['fuel'] }}</span> | ⚙️ Transmission: <span>{{ car['transmission'] }}</span>
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="no-results">❌ No cars match your criteria. Try again!</p>
+        {% endif %}
+        <a href="/" class="btn">🔙 Go Back</a>
+        <a href="/contact" class="btn contact-btn">📞 Contact Us</a>
+    </div>
+</body>
+</html>
