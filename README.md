@@ -10,6 +10,7 @@ project2/
 ├── input/                          
 │   └── CAR DETAILS FROM CAR DEKHO.csv
 │
+|
 ├── static/                        
 │   ├── static.js                   
 │   ├── style.css                   
