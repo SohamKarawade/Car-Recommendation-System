@@ -4,22 +4,6 @@ This project is a lightweight, interpretable, and web-based **Car Recommendation
 
 ---
 
-# Folder Structure
-
-project2 : 1) input > CAR DETAILS FROM CAR DEKHO.csv/
-           2) static > 1) static.js
-                       2) style.css
-                       3) font > static > Lexend-Regular.ttf/
-            3) templates > 1) welcome.html
-                           2) index.html
-                           3) result.html
-                           4) contact.html
-            4) app.py
-            5) python2.py
-            6) project3.ipynb
-
----
-
 # Project Objective
 
 The aim is to build a transparent recommendation system that helps users select cars based on real-world parameters such as:
