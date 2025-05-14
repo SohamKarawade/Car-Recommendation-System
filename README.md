@@ -5,28 +5,38 @@ This project is a lightweight, interpretable, and web-based **Car Recommendation
 ---
 
 # Folder Structure
-project2/
-│
-├── input/                          
-│     └── CAR DETAILS FROM CAR DEKHO.csv
-│
-|
-├── static/                        
-│   ├── static.js                   
-│   ├── style.css                   
-│   └── font/
-│       └── static/                 
-│           └── Lexend-Regular.ttf  
-│
-├── templates/                      
-│   ├── welcome.html               
-│   ├── index.html                  
-│   ├── result.html                 
-│   └── contact.html                
-│
-├── app.py                          
-├── project3.ipynb                 
-└── README.md                       
+
+project2
+
+   input
+
+      CAR DETAILS FROM CAR DEKHO.csv
+
+   static
+
+      static.js
+
+      style.css
+
+      font
+
+         static
+
+            Lexend-Regular.ttf
+
+   templates
+
+      welcome.html
+
+      index.html
+
+      result.html
+
+      contact.html
+
+   app.py
+
+   project3.ipynb
 
 ---
 
