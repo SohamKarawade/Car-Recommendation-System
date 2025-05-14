@@ -7,7 +7,7 @@ This project is a lightweight, interpretable, and web-based **Car Recommendation
 # Folder Structure
 project2/
 │
-├── input/                          # Folder for dataset(s)
+├── input/                          
 │   └── CAR DETAILS FROM CAR DEKHO.csv
 │
 ├── static/                        
